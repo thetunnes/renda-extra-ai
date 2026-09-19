@@ -1,3 +1,3 @@
 import type { NextConfig } from 'next';
-const config: NextConfig = { ...(process.env.STATIC_EXPORT === '1' ? { output: 'export' as const } : {}), images: { unoptimized: true } };
+const config: NextConfig = { trailingSlash: true, ...(process.env.STATIC_EXPORT === '1' ? { output: 'export' as const } : {}), images: { unoptimized: true } };
 export default config;
