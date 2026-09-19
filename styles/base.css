@@ -1,0 +1,79 @@
+:root {
+  --cream: var(--color-background);
+  --ink: var(--color-text);
+  --green: var(--color-primary);
+  --muted: var(--color-muted);
+  --line: var(--color-border);
+  --lime: var(--color-accent);
+  --white: var(--color-surface);
+  --font-sans: var(--font-body);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 104px;
+}
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font: 14px/1.6 var(--font-body);
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button,
+a {
+  transition:
+    background var(--motion-duration),
+    transform var(--motion-duration),
+    color var(--motion-duration);
+}
+button {
+  border: 0;
+}
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 5px;
+}
+button:hover,
+a.button:hover {
+  transform: translateY(var(--hover-lift));
+}
+.wrap {
+  max-width: 1192px;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin: auto;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+.skip {
+  position: fixed;
+  top: -100px;
+  z-index: 100;
+  background: var(--color-surface);
+  padding: 10px;
+}
+.skip:focus {
+  top: 10px;
+}

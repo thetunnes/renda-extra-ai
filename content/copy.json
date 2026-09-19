@@ -1,0 +1,156 @@
+{
+  "header": {
+    "skip": "Pular para plataformas",
+    "explore": "Explorar plataformas"
+  },
+  "hero": {
+    "eyebrow": "PESSOAS REAIS. INTELIGÊNCIA ARTIFICIAL.",
+    "title": "O futuro da IA",
+    "titleLine2": "também precisa",
+    "titleEmphasis": "de você.",
+    "description": "Descubra plataformas que pagam pela sua contribuição.",
+    "descriptionLine2": "Vídeos, voz, fotos e pequenas tarefas que ajudam",
+    "descriptionLine3": "a treinar a próxima geração de IA.",
+    "primaryAction": "Encontrar plataformas",
+    "secondaryAction": "Como funciona",
+    "decoration": "+",
+    "artLabel": "CONEXÕES QUE CONSTROEM O FUTURO",
+    "artCaption": "o seu lado humano.",
+    "artCaptionEmphasis": "a próxima inteligência.",
+    "voiceTitle": "Sua voz, novos aprendizados",
+    "videoTitle": "O cotidiano ensina",
+    "videoSubtitle": "Vídeos para treinar IA",
+    "photoTitle": "Um novo ponto de vista",
+    "photoSubtitle": "Fotos do mundo real",
+    "artFooter": "Sua contribuição faz parte."
+  },
+  "trust": {
+    "Curadoria_independente": "Curadoria independente",
+    "Compare_antes_de_escolher": "Compare antes de escolher",
+    "Sem_promessas_de_renda": "Sem promessas de renda",
+    "Pensado_para_o_Brasil": "Pensado para o Brasil"
+  },
+  "catalog": {
+    "eyebrow": "EXPLORE AS POSSIBILIDADES",
+    "title": "Encontre seu ponto de partida.",
+    "description": "Conheça as plataformas. Entenda as tarefas. Escolha o que faz sentido para você.",
+    "countSuffix": "plataformas na curadoria",
+    "unknownTask": "Treinamento de IA",
+    "details": "Ver detalhes",
+    "reviewNote": "A disponibilidade de tarefas pode mudar. Consulte a data de revisão e as fontes nos detalhes.",
+    "empty": "Nenhuma plataforma com esse tipo de tarefa confirmado."
+  },
+  "quiz": {
+    "eyebrow": "UM CAMINHO COM A SUA CARA",
+    "title": "Por onde",
+    "titleLine2": "você quer começar?",
+    "description": "Conte o que prefere fazer e encontre plataformas que combinam com você.",
+    "privacyNote": "Sem cadastro. Sem complicação.",
+    "step1": "01",
+    "taskQuestion": "Que tipo de tarefa você prefere?",
+    "step2": "02",
+    "deviceQuestion": "Qual dispositivo você tem para as tarefas?",
+    "action": "Encontrar meu caminho",
+    "resultsTitle": "Plataformas que combinam com suas preferências",
+    "empty": "Nenhuma plataforma com essas características confirmadas. Experimente outro tipo de tarefa ou dispositivo.",
+    "requirementsNote": "Filtramos apenas dispositivos confirmados para tarefas. Confira o modelo exigido nos detalhes; acesso pelo navegador não garante compatibilidade para gravar."
+  },
+  "comparison": {
+    "eyebrow": "A ESCOLHA É SUA",
+    "title": "Menos abas abertas. Mais clareza.",
+    "description": "As informações essenciais, lado a lado.",
+    "caption": "Comparação das plataformas",
+    "columnTitle": "O que você precisa saber",
+    "disclaimer": "Ganhos variam conforme o projeto e a aprovação das tarefas. Consulte os requisitos no site de cada plataforma."
+  },
+  "how": {
+    "eyebrow": "DO PRIMEIRO CLIQUE À CONTRIBUIÇÃO",
+    "title": "Você não precisa entender de IA.",
+    "titleLine2": "Só precisa começar pelo básico.",
+    "steps": [
+      {
+        "icon": "MousePointer2",
+        "title": "Escolha uma plataforma",
+        "text": "Compare as opções e encontre tarefas que façam sentido para sua rotina."
+      },
+      {
+        "icon": "Link2",
+        "title": "Faça seu cadastro",
+        "text": "Acesse o site oficial e confira os requisitos para participar."
+      },
+      {
+        "icon": "Video",
+        "title": "Contribua com as tarefas",
+        "text": "Siga as instruções de cada projeto e envie seu trabalho para análise."
+      },
+      {
+        "icon": "CircleDollarSign",
+        "title": "Receba pelo trabalho aprovado",
+        "text": "Confira as regras de pagamento e saque da plataforma escolhida."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "TECNOLOGIA COM UM LADO HUMANO",
+    "title": "Para aprender sobre o mundo,",
+    "titleLine2": "a IA precisa de quem vive nele.",
+    "intro": "Um sotaque. Um objeto. O jeito de preparar um café. Sistemas de inteligência artificial aprendem com exemplos do mundo real — e é aí que as pessoas entram.",
+    "bodyBeforeBrand": "Dependendo do projeto, empresas buscam vozes, imagens, movimentos e atividades humanas para treinar e avaliar seus modelos. A",
+    "bodyAfterBrand": "conecta você a essas possibilidades, com informação clara para decidir.",
+    "note": "Pessoas diferentes. Perspectivas que importam."
+  },
+  "guides": {
+    "eyebrow": "INFORMAÇÃO PARA DAR O PRÓXIMO PASSO",
+    "title": "Comece com mais confiança.",
+    "description": "Leituras rápidas, decisões melhores.",
+    "action": "Ler guia"
+  },
+  "transparency": {
+    "title": "Antes de começar,",
+    "titleLine2": "vamos ser transparentes.",
+    "items": [
+      [
+        "Ganhos não são garantidos",
+        "As tarefas e os ganhos variam por país, perfil, plataforma e período."
+      ],
+      [
+        "Leia os requisitos",
+        "O trabalho pode ser rejeitado se não seguir as instruções do projeto."
+      ],
+      ["Proteja seus dados", "Entenda como suas gravações, imagens e voz serão utilizadas."],
+      [
+        "Sobre links de afiliado",
+        "Alguns links podem gerar comissão, sem custo adicional para você."
+      ]
+    ]
+  },
+  "faq": {
+    "eyebrow": "SEM DÚVIDAS NO CAMINHO",
+    "title": "Bom saber",
+    "titleLine2": "antes de começar.",
+    "items": [
+      [
+        "Preciso ter experiência com inteligência artificial?",
+        "Não necessariamente. Hub e Crowtado informam que não exigem experiência prévia. Cada projeto tem seus próprios requisitos; confira as instruções antes de participar."
+      ],
+      [
+        "Quanto posso ganhar?",
+        "Não há renda garantida. Valores dependem das tarefas disponíveis, da sua elegibilidade e da aprovação do trabalho. Consulte o valor e as condições de pagamento em cada plataforma."
+      ],
+      [
+        "A {brand} paga pelas tarefas?",
+        "Não. Somos um portal independente de curadoria. Cadastro, tarefas, análise e pagamentos são realizados por cada plataforma."
+      ],
+      [
+        "Como vocês escolhem as plataformas?",
+        "Consultamos as páginas oficiais e organizamos as informações públicas para facilitar sua comparação. Informações não confirmadas são sinalizadas. A inclusão no portal não é garantia de pagamento ou disponibilidade."
+      ]
+    ]
+  },
+  "footer": {
+    "explore": "Explore as possibilidades",
+    "rss": "Feed RSS",
+    "json": "Feed JSON",
+    "ai": "Índice para IA"
+  }
+}

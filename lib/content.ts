@@ -1,23 +1,3 @@
-export const guides = [
-  {
-    "slug": "antes-do-primeiro-cadastro",
-    "title": "O que conferir antes do primeiro cadastro",
-    "text": "Comece pelo site oficial. Leia os requisitos de idade, localização e equipamento. Confira os termos de uso e quais dados serão coletados. Verifique como funcionam a aprovação de tarefas, o saldo mínimo e os saques. Só então decida se a oportunidade faz sentido para você.",
-    "type": "PRIMEIROS PASSOS",
-    "updatedAt": "2026-09-19"
-  },
-  {
-    "slug": "como-preparar-uma-gravacao",
-    "title": "Como preparar uma boa gravação",
-    "text": "Leia as instruções específicas do projeto antes de gravar. Para áudio, prefira um ambiente silencioso. Para imagens, verifique luz, enquadramento e foco. Evite incluir dados pessoais ou outras pessoas sem autorização. Revise o arquivo antes de enviar: a aprovação depende dos critérios de cada tarefa.",
-    "type": "NA PRÁTICA",
-    "updatedAt": "2026-09-19"
-  },
-  {
-    "slug": "privacidade-dos-seus-dados",
-    "title": "Seus dados também merecem atenção",
-    "text": "Antes de compartilhar voz, imagens ou vídeos, entenda as permissões que está concedendo. Confira quem recebe os arquivos, a finalidade de uso e as opções de exclusão descritas pela plataforma. Evite gravar documentos, endereços, informações financeiras ou pessoas que não consentiram.",
-    "type": "PRIVACIDADE",
-    "updatedAt": "2026-09-19"
-  }
-];
+import records from '@/content/guides.json';
+import type { Guide } from '@/domain/types';
+export const guides = records as Guide[];

@@ -6,20 +6,36 @@
     "dev": "next dev --webpack --hostname 0.0.0.0",
     "build": "next build --webpack",
     "start": "next start",
-    "build:export": "STATIC_EXPORT=1 next build --webpack"
+    "build:export": "STATIC_EXPORT=1 next build --webpack",
+    "theme": "node scripts/theme.mjs",
+    "validate:content": "node scripts/validate-content.mjs",
+    "predev": "npm run validate:content && npm run theme",
+    "prebuild": "npm run validate:content && npm run theme",
+    "prebuild:export": "npm run validate:content && npm run theme",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "check": "npm run validate:content && node scripts/theme.mjs --check && npm run format:check && npm run typecheck && npm test",
+    "check:seo": "python3 scripts/check-seo.py",
+    "verify": "npm run check && npm run build:export && npm run check:seo",
+    "format": "prettier --write app components config content domain hooks lib scripts tests styles docs README.md",
+    "format:check": "prettier --check app components config content domain hooks lib scripts tests styles docs README.md"
   },
   "dependencies": {
+    "lucide-react": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "lucide-react": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "typescript": "latest",
+    "@tailwindcss/postcss": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "prettier": "3.6.2",
     "tailwindcss": "latest",
-    "@tailwindcss/postcss": "latest"
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=22.20.0"
   }
 }

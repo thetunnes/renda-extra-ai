@@ -1,0 +1,30 @@
+{
+  "motion": {
+    "enabled": true,
+    "durationMs": 200,
+    "hoverLiftPx": 2,
+    "cardLiftPx": 4,
+    "entrance": false
+  },
+  "features": { "assistantTools": true },
+  "images": { "hero": null },
+  "navigation": [
+    ["Plataformas", "plataformas"],
+    ["Comparar", "comparar"],
+    ["Como funciona", "como-funciona"],
+    ["Guias", "guias"],
+    ["Sobre", "sobre"]
+  ],
+  "sections": [
+    "hero",
+    "trust",
+    "catalog",
+    "quiz",
+    "comparison",
+    "how",
+    "about",
+    "guides",
+    "transparency",
+    "faq"
+  ]
+}

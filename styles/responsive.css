@@ -1,0 +1,503 @@
+@media (min-width: 1500px) {
+  .wrap {
+    max-width: 1270px;
+  }
+  .hero {
+    padding-block: 85px;
+  }
+  .hero h1 {
+    font-size: 74px;
+  }
+  .quiz-section,
+  .transparency {
+    max-width: 1214px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav nav {
+    gap: 17px;
+  }
+  .nav-cta {
+    display: none;
+  }
+  .hero {
+    gap: 15px;
+  }
+  .hero h1 {
+    font-size: 56px;
+  }
+  .hero-art {
+    transform: scale(0.86);
+    transform-origin: center;
+  }
+  .card-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .platform-card {
+    padding: 19px;
+  }
+  .quiz-section,
+  .transparency {
+    margin-inline: 28px;
+    gap: 30px;
+  }
+  .quiz-section {
+    padding: 30px;
+  }
+  .editorial {
+    gap: 35px;
+  }
+  .section-heading p {
+    max-width: 450px;
+  }
+  .transparency {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .transparency h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrap {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .nav {
+    height: 72px;
+  }
+  .brand {
+    font-size: 30px;
+  }
+  .menu-button {
+    display: block;
+    padding: 5px;
+  }
+  .nav nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--cream);
+    padding: 20px 25px;
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+  }
+  .nav nav.is-open {
+    display: flex;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 42px;
+    padding-bottom: 25px;
+    gap: 15px;
+  }
+  .hero .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.2px;
+  }
+  .hero h1 {
+    font-size: 56px;
+    letter-spacing: -2px;
+    margin-top: 21px;
+  }
+  .hero-description {
+    font-size: 13px;
+  }
+  .desktop {
+    display: none;
+  }
+  .hero-actions {
+    gap: 18px;
+  }
+  .button {
+    padding: 13px 16px;
+    font-size: 11px;
+    gap: 12px;
+  }
+  .text-link {
+    font-size: 11px;
+    gap: 8px;
+  }
+  .disclosure {
+    font-size: 8px;
+    line-height: 1.6;
+    max-width: 320px;
+    align-items: flex-start;
+  }
+  .disclosure svg {
+    flex-shrink: 0;
+  }
+  .hero-art {
+    height: 330px;
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.92);
+  }
+  .orbit-one {
+    width: 300px;
+    height: 300px;
+  }
+  .art-label {
+    font-size: 6px;
+    top: 0;
+  }
+  .task-voice {
+    top: 25px;
+    left: 0;
+    width: 270px;
+  }
+  .task-video {
+    right: -3px;
+    top: 160px;
+  }
+  .task-photo {
+    bottom: 5px;
+    left: 0;
+  }
+  .art-footer {
+    bottom: -17px;
+    right: 10px;
+    font-size: 8px;
+  }
+  .cross-two {
+    bottom: 70px;
+  }
+  .trust-strip > .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-block: 20px;
+  }
+  .trust-strip span {
+    font-size: 8px;
+    gap: 6px;
+  }
+  .trust-strip svg {
+    width: 15px;
+  }
+  .section {
+    padding-top: 46px;
+    padding-bottom: 43px;
+  }
+  h2 {
+    font-size: 31px;
+  }
+  .section-heading {
+    display: block;
+    margin-bottom: 23px;
+  }
+  .section-heading p {
+    font-size: 11px;
+    margin-top: 12px;
+  }
+  .count {
+    display: block;
+    margin-top: 15px;
+  }
+  .filters {
+    gap: 6px;
+  }
+  .filters button {
+    font-size: 9px;
+    padding: 7px 10px;
+  }
+  .platform-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .platform-card {
+    padding: 23px;
+  }
+  .card-top {
+    flex-direction: row;
+    align-items: center;
+  }
+  .status {
+    font-size: 9px;
+  }
+  .platform-card h3 {
+    font-size: 23px;
+  }
+  .card-description {
+    font-size: 12px;
+    min-height: 0;
+  }
+  .tags {
+    margin: 15px 0;
+  }
+  .card-facts {
+    font-size: 11px;
+  }
+  .card-actions button {
+    font-size: 11px;
+    padding: 12px;
+  }
+  .footnote {
+    align-items: flex-start;
+    line-height: 1.7;
+    font-size: 8px;
+  }
+  .footnote svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .quiz-section {
+    margin-inline: 22px;
+    padding: 26px 23px;
+    display: block;
+  }
+  .quiz-intro h2 {
+    font-size: 32px;
+  }
+  .quiz-intro h2 br {
+    display: none;
+  }
+  .quiz-intro p {
+    max-width: 100%;
+  }
+  .quiz-time {
+    margin-top: 12px;
+  }
+  .quiz-form {
+    margin-top: 29px;
+  }
+  .quiz-form legend {
+    font-size: 11px;
+  }
+  .choices button {
+    padding: 9px 11px;
+  }
+  .section-heading > .text-link {
+    margin-top: 15px;
+  }
+  .comparison {
+    display: none;
+  }
+  .mobile-comparison {
+    display: grid;
+    gap: 14px;
+  }
+  .mobile-comparison article {
+    padding: 20px;
+    background: var(--color-surface);
+    border: 1px solid var(--line);
+    border-radius: 9px;
+  }
+  .mobile-comparison h3 {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .mobile-comparison .platform-logo {
+    width: 34px;
+    height: 34px;
+  }
+  .mobile-comparison dl {
+    margin: 0;
+  }
+  .how-section {
+    padding: 38px 0;
+  }
+  .how-section h2 {
+    font-size: 30px;
+  }
+  .steps {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 21px;
+    margin-top: 25px;
+  }
+  .steps h3 {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .steps p {
+    font-size: 10px;
+  }
+  .editorial {
+    display: block;
+  }
+  .editorial h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .editorial p {
+    font-size: 12px;
+  }
+  .guide-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .muted {
+    display: block;
+    margin-top: 15px;
+  }
+  .guide-card {
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    min-height: 150px;
+  }
+  .guide-art {
+    height: 100%;
+    overflow: hidden;
+  }
+  .guide-art svg {
+    width: 40px;
+  }
+  .guide-art > span {
+    font-size: 26px;
+  }
+  .guide-content {
+    padding: 18px;
+  }
+  .guide-content h3 {
+    font-size: 20px;
+    margin-bottom: 13px;
+  }
+  .transparency {
+    margin-inline: 22px;
+    display: block;
+    padding: 27px 24px;
+  }
+  .transparency h2 {
+    font-size: 30px;
+  }
+  .transparency-grid {
+    margin-top: 27px;
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+  .transparency h3 {
+    font-size: 12px;
+  }
+  .transparency p {
+    font-size: 11px;
+  }
+  .faq {
+    display: block;
+  }
+  .faq h2 br {
+    display: none;
+  }
+  .faq > div:last-child {
+    margin-top: 20px;
+  }
+  .footer-top {
+    align-items: flex-start;
+    gap: 25px;
+    flex-direction: column;
+  }
+  .footer-bottom {
+    font-size: 8px;
+    gap: 12px;
+    flex-direction: column;
+  }
+  .platform-dialog {
+    padding: 28px;
+  }
+  .platform-dialog h2 {
+    font-size: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: 46px;
+    letter-spacing: -1.8px;
+  }
+}
+
+.device-requirements {
+  margin: 20px 0;
+  padding: 20px;
+  background: var(--color-tone-f0f3e9);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+.device-requirements h3 {
+  font-size: 15px;
+  margin: 0 0 17px;
+}
+.device-requirements h4 {
+  font-size: 12px;
+  margin: 16px 0 5px;
+}
+.device-requirements p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--color-tone-65725e);
+}
+.device-requirements small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--color-tone-7c8774);
+  margin-top: 12px;
+}
+.device-requirements .source-link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--color-tone-3b6644);
+  text-decoration: underline;
+  line-height: 1.6;
+}
+.device-clarification {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+  margin-top: 16px !important;
+}
+.comparison td {
+  vertical-align: top;
+}
+.mobile-comparison dd {
+  max-width: 65%;
+  overflow-wrap: anywhere;
+}
+
+/* The same SVG wordmark is used in the header and footer. */
+.brand {
+  flex-shrink: 0;
+}
+.brand img {
+  display: block;
+  width: 220px;
+  height: 55px;
+  object-fit: contain;
+}
+.nav nav {
+  gap: 22px;
+}
+@media (max-width: 700px) {
+  .brand img {
+    width: 192px;
+    height: 48px;
+  }
+}
+@media (max-width: 360px) {
+  .brand img {
+    width: 176px;
+    height: 44px;
+  }
+}

@@ -1,34 +1,34 @@
 # granaextracomia
 
-Portal de curadoria de plataformas de contribuição para IA, em Next.js.
+Portal independente para comparar plataformas de contribuição para IA. Next.js, React e exportação estática; GitHub privado e hospedagem pública mantidos separadamente.
 
-## Desenvolvimento
+## Início
+
+Requer Node.js 22.20+ e Python 3 para a verificação do HTML.
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-Abra http://localhost:3000. Mantenha o terminal aberto durante o uso.
-As alterações no projeto aparecem automaticamente.
+Abra http://localhost:3000. Para produção local: `npm run build` e `npm start`. Para hospedagem estática: `npm run build:export` gera `out/`. Depois da exportação, refaça `npm run build` antes de usar `npm start`.
 
-## Produção local
+## Customização e harness AI
+
+- Marca e SEO: `config/brand.json`.
+- Cores, fontes e dimensões: `config/theme.json`.
+- Animações, hero e organização: `config/experience.json`.
+- Textos e conteúdo: `content/`.
+- Regras de negócio: `domain/`.
+- Componentes por seção: `components/home/`; componentes compartilhados: `components/ui/`.
+
+[Manual do harness](docs/harness/README.md) · [Receitas de customização](docs/harness/CUSTOMIZATION.md) · [Critérios de aceitação](docs/harness/EVALUATIONS.md) · [SEO](docs/SEO.md).
 
 ```sh
-npm run build
-npm start
+npm run theme     # Gera CSS após editar configurações visuais
+npm run format    # Formata módulos e conteúdo
+npm run check     # Validação + tema + formatação + tipos + testes
+npm run verify    # Check + exportação + contrato SEO do HTML
 ```
 
-Abra http://localhost:3000. Pare o servidor de desenvolvimento antes de iniciar o de produção na mesma porta.
-
-## Exportação estática opcional
-
-`npm run build:export` gera a pasta `out/` para hospedagem estática.
-Para voltar ao servidor Next.js, execute `npm run build` novamente antes de `npm start`.
-
-## Identidade e plataformas
-
-- Nome e links: `lib/site.ts`
-- Logotipo: `public/granaextracomia-logo.svg`
-- Ícone: `public/favicon.svg`
-- Estilos: `app/globals.css`
+O build valida os registros e gera o tema automaticamente. O workflow do GitHub executa `verify`. Leia `AGENTS.md` antes de alterações assistidas por IA. O harness não exige API de modelos ou segredos.

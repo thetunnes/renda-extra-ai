@@ -6,7 +6,11 @@ from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1] / 'out'
-ORIGIN = 'https://granaextracomia.cpani662645.chatgpt.site'
+PROJECT = ROOT.parent
+ORIGIN = json.loads((PROJECT/'config/brand.json').read_text())['url']
+PLATFORMS = json.loads((PROJECT/'content/platforms.json').read_text())
+GUIDES = json.loads((PROJECT/'content/guides.json').read_text())
+EXPECTED = {ORIGIN+'/'} | {ORIGIN+'/plataformas/'+p['id']+'/' for p in PLATFORMS} | {ORIGIN+'/guias/'+g['slug']+'/' for g in GUIDES}
 
 class Page(HTMLParser):
     def __init__(self, html):
@@ -31,7 +35,7 @@ class Page(HTMLParser):
             self.current = None
 
 urls = [n.text for n in ET.parse(ROOT/'sitemap.xml').findall('.//{*}loc')]
-assert len(urls) == 7 and len(set(urls)) == 7
+assert set(urls) == EXPECTED and len(urls) == len(EXPECTED)
 titles, descriptions = set(), set()
 for url in urls:
     assert url.startswith(ORIGIN + '/')
@@ -60,5 +64,5 @@ assert {x.findtext('link') for x in rss} == set(urls) - {ORIGIN+'/'}
 assert {x['url'] for x in feed['items']} == set(urls) - {ORIGIN+'/'}
 assert all(x['id'] == x['url'] and x['content_text'] for x in feed['items'])
 assert ORIGIN+'/sitemap.xml' in (ROOT/'robots.txt').read_text()
-assert all(url in (ROOT/'llms.txt').read_text() for url in urls[1:])
-print('SEO OK: 7 páginas, canonical, HTML, metadados, JSON-LD, links internos, sitemap, robots e 2 feeds.')
+assert all(url in (ROOT/'llms.txt').read_text() for url in set(urls) - {ORIGIN+'/'})
+print(f'SEO OK: {len(urls)} páginas, canonical, HTML, metadados, JSON-LD, links internos, sitemap, robots e 2 feeds.')
