@@ -28,7 +28,12 @@
     "reviewedAt": "2026-09-19",
     "mark": "asterisk",
     "initials": "H",
-    "image": null
+    "image": {
+      "src": "/platforms/hub.png",
+      "alt": "Logo da Hub",
+      "width": 1084,
+      "height": 1012
+    }
   },
   {
     "id": "crowtado",
@@ -59,7 +64,12 @@
     "reviewedAt": "2026-09-19",
     "mark": "audio",
     "initials": "C",
-    "image": null
+    "image": {
+      "src": "/platforms/crowtado.svg",
+      "alt": "Logo da Crowtado",
+      "width": 32,
+      "height": 32
+    }
   },
   {
     "id": "invent",
@@ -90,6 +100,11 @@
     "reviewedAt": "2026-09-19",
     "mark": "initials",
     "initials": "im",
-    "image": null
+    "image": {
+      "src": "/platforms/invent-money.svg",
+      "alt": "Logo da Invent Money",
+      "width": 18,
+      "height": 18
+    }
   }
 ]
