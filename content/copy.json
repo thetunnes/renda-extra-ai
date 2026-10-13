@@ -19,8 +19,8 @@
     "secondaryAction": "Encontrar meu perfil",
     "decoration": "+",
     "artLabel": "Sua próxima possibilidade",
-    "artCaption": "O que combina",
-    "artCaptionEmphasis": "com a sua rotina?",
+    "artCaption": "Uma opção",
+    "artCaptionEmphasis": "para sua rotina.",
     "voiceTitle": "Sua voz, novos aprendizados",
     "videoTitle": "O cotidiano ensina",
     "videoSubtitle": "Vídeos para treinar IA",
@@ -117,8 +117,8 @@
     "action": "Ler guia"
   },
   "transparency": {
-    "title": "Expectativas claras.",
-    "titleLine2": "Escolhas melhores.",
+    "title": "Escolha com",
+    "titleLine2": "clareza.",
     "items": [
       [
         "Ganhos não são garantidos",

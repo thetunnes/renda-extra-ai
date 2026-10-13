@@ -44,7 +44,6 @@ export default async function GuidePage({ params }: Props) {
         <Link href="/">Início</Link> / Guia
       </nav>
       <article>
-        <span className="eyebrow">{g.type}</span>
         <h1>{g.title}</h1>
         <p className="article-date">
           Por {site.name} · Atualizado em{' '}

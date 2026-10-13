@@ -35,7 +35,6 @@ export default function Catalog() {
       <section id="plataformas" className="section wrap">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">{copy.catalog.eyebrow}</span>
             <h2>{copy.catalog.title}</h2>
             <p>{copy.catalog.description}</p>
           </div>

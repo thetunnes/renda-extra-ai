@@ -1,4 +1,4 @@
-import { AudioLines } from 'lucide-react';
+import { AudioLines, Asterisk } from 'lucide-react';
 import type { Platform } from '@/domain/types';
 import Media from './Media';
 export default function PlatformMark({ p }: { p: Platform }) {
@@ -7,7 +7,7 @@ export default function PlatformMark({ p }: { p: Platform }) {
       {p.image ? (
         <Media asset={p.image} />
       ) : p.mark === 'asterisk' ? (
-        <span className="hub-mark">✳</span>
+        <Asterisk size={29} aria-hidden="true" />
       ) : p.mark === 'audio' ? (
         <AudioLines size={29} />
       ) : (

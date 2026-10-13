@@ -6,7 +6,6 @@ export default function Faq() {
     <>
       <section className="faq section wrap">
         <div>
-          <span className="eyebrow">{copy.faq.eyebrow}</span>
           <h2>
             {copy.faq.title} <br />
             {copy.faq.titleLine2}

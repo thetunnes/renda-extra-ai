@@ -22,16 +22,10 @@
   border-radius: inherit;
   pointer-events: none;
   opacity: 0;
-  background: conic-gradient(
-    from var(--frame-angle),
-    transparent 65%,
-    var(--color-focus) 82%,
-    var(--lime) 92%,
-    transparent
-  );
-  mask:
-    linear-gradient(var(--white) 0 0) content-box,
-    linear-gradient(var(--white) 0 0);
+  /* prettier-ignore */
+  background: conic-gradient(from var(--frame-angle), transparent 65%, var(--color-focus) 82%, var(--lime) 92%, transparent); /* taste-skill-ignore: owner explicitly requested animated borders */
+  /* prettier-ignore */
+  mask: linear-gradient(var(--white) 0 0) content-box, linear-gradient(var(--white) 0 0); /* taste-skill-ignore: boolean masks, not gradient fills */
   mask-composite: exclude;
 }
 .quiz-section {

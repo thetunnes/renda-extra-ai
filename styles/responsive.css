@@ -196,9 +196,6 @@
   h2 {
     font-size: 34px;
   }
-  .eyebrow {
-    font-size: 13px;
-  }
   .section-heading {
     display: block;
     margin-bottom: 24px;
@@ -446,5 +443,16 @@
   .quiz-section,
   .transparency {
     margin-inline: 18px;
+  }
+}
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero-directory h2 {
+    font-size: 30px;
+  }
+  .article-page h1 {
+    font-size: 34px;
   }
 }

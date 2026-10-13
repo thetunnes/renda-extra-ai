@@ -16,7 +16,6 @@ export default function Guides() {
       <section id="guias" className="section guides wrap">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">{copy.guides.eyebrow}</span>
             <h2>{copy.guides.title}</h2>
           </div>
           <span className="muted">{copy.guides.description}</span>

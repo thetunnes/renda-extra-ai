@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { ArrowUpRight, ArrowRight, Smartphone, Monitor, Check, Sparkles } from 'lucide-react';
+import { ArrowUpRight, ArrowRight, Smartphone, Monitor, Check } from 'lucide-react';
 import { platforms, type Platform } from '@/lib/site';
 import {
   recommendPlatforms,
@@ -21,10 +21,6 @@ export default function Quiz() {
     <>
       <section id="encontrar" className="quiz-section wrap">
         <div className="quiz-intro">
-          <span className="eyebrow">
-            <Sparkles size={14} />
-            {copy.quiz.eyebrow}
-          </span>
           <h2>
             {copy.quiz.title} <br />
             {copy.quiz.titleLine2}
@@ -34,9 +30,7 @@ export default function Quiz() {
         </div>
         <div className="quiz-form">
           <fieldset>
-            <legend>
-              <span>{copy.quiz.step1}</span> {copy.quiz.taskQuestion}
-            </legend>
+            <legend>{copy.quiz.taskQuestion}</legend>
             <div className="choices">
               {preferences.map((t) => (
                 <button
@@ -55,9 +49,7 @@ export default function Quiz() {
             </div>
           </fieldset>
           <fieldset>
-            <legend>
-              <span>{copy.quiz.step2}</span> {copy.quiz.deviceQuestion}
-            </legend>
+            <legend>{copy.quiz.deviceQuestion}</legend>
             <div className="choices">
               {devices.map((t) => (
                 <button

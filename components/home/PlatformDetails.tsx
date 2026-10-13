@@ -5,7 +5,6 @@ import type { Platform } from '@/domain/types';
 import Mark from '@/components/ui/PlatformMark';
 import PlatformLink from '@/components/ui/PlatformLink';
 import Modal from '@/components/ui/Modal';
-import copy from '@/content/copy.json';
 export default function PlatformDetails({
   platform,
   onClose,
@@ -16,7 +15,6 @@ export default function PlatformDetails({
   return (
     <Modal onClose={onClose} labelledBy="modal-title">
       <Mark p={platform} />
-      <span className="eyebrow modal-eyebrow">{copy.article.modalLabel}</span>
       <h2 id="modal-title">{platform.name}</h2>
       <p>{platform.description}</p>
       <dl>

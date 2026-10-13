@@ -6,7 +6,6 @@ export default function How() {
     <>
       <section id="como-funciona" className="how-section">
         <div className="wrap">
-          <span className="eyebrow">{copy.how.eyebrow}</span>
           <h2>
             {copy.how.title}
             <br />

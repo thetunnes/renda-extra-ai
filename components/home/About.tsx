@@ -5,7 +5,6 @@ export default function About() {
     <>
       <section id="sobre" className="editorial section wrap">
         <div>
-          <span className="eyebrow">{copy.about.eyebrow}</span>
           <h2>
             {copy.about.title}
             <br />

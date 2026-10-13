@@ -10,7 +10,6 @@ export default function Hero() {
     <section className="hero-field">
       <div className="hero wrap">
         <div className="hero-copy">
-          <p className="hero-context">{copy.hero.eyebrow}</p>
           <h1>
             {copy.hero.title}
             <br />
@@ -36,7 +35,6 @@ export default function Hero() {
           <Media className="hero-image" asset={experience.images.hero} priority />
         ) : (
           <aside className="hero-directory" aria-label={copy.hero.artLabel} data-ui>
-            <p className="directory-caption">{copy.hero.artLabel}</p>
             <h2>
               {copy.hero.artCaption}
               <br />

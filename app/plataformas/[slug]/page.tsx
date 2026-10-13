@@ -36,7 +36,6 @@ export default async function PlatformPage({ params }: Props) {
       <nav aria-label="Caminho da página">
         <Link href="/">Início</Link> / {p.name}
       </nav>
-      <span className="eyebrow">{copy.article.platformLabel}</span>
       <h1>{p.name}</h1>
       <p className="article-lead">{p.description}</p>
       <p className="article-date">

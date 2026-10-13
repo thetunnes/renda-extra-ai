@@ -9,7 +9,6 @@ export default function Comparison() {
       <section id="comparar" className="section wrap">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">{copy.comparison.eyebrow}</span>
             <h2>{copy.comparison.title}</h2>
             <p>{copy.comparison.description}</p>
           </div>
