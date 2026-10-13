@@ -13,7 +13,7 @@ test('computador no cadastro não equivale a computador nas tarefas', () => {
   assert.deepEqual(recommendPlatforms(data.platforms, 'Tanto faz', 'Computador'), []);
   assert.deepEqual(
     recommendPlatforms(data.platforms, 'Tanto faz', 'Ambos').map((p) => p.id),
-    ['hub', 'crowtado'],
+    ['hub', 'crowtado', 'flambra'],
   );
 });
 test('tarefa e dispositivo são combinados; status desconhecido não vira recomendação', () => {
@@ -31,7 +31,7 @@ test('comissão não altera ordem ou seleção e link oficial segue disponível'
     recommendPlatforms(changed, 'Tanto faz', 'Ambos').map((p) => p.id),
     recommendPlatforms(data.platforms, 'Tanto faz', 'Ambos').map((p) => p.id),
   );
-  assert.equal(platformDestination(data.platforms[0]).href, 'https://ai.hub.xyz/r/GBYV6GYJ');
+  assert.equal(platformDestination(data.platforms[0]).href, 'https://ai.hub.xyz/r/220970');
   assert.match(platformDestination(data.platforms[0]).rel, /sponsored/);
   assert.equal(
     platformDestination({ ...data.platforms[0], affiliateUrl: '' }).href,
@@ -85,5 +85,5 @@ test('rebranding, reordenação e nova plataforma não dependem de IDs no compon
     changed.experience.sections[2],
   ];
   assert.equal(validateContent(changed), true);
-  assert.equal(filterPlatforms(changed.platforms, 'Todas').length, 4);
+  assert.equal(filterPlatforms(changed.platforms, 'Todas').length, data.platforms.length + 1);
 });

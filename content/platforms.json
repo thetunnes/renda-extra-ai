@@ -21,7 +21,7 @@
     "payment": "PIX, transferência ou USDC",
     "experience": "Não exige experiência",
     "url": "https://ai.hub.xyz/",
-    "affiliateUrl": "https://ai.hub.xyz/r/GBYV6GYJ",
+    "affiliateUrl": "https://ai.hub.xyz/r/220970",
     "color": "violet",
     "highlight": "Pagamento por hora aprovada",
     "verification": "confirmed",
@@ -93,7 +93,7 @@
     "payment": "Não informado",
     "experience": "Não informado",
     "url": "https://inventmoney.com/",
-    "affiliateUrl": "",
+    "affiliateUrl": "https://app.inventmoney.com/r/WRAJTAFI",
     "color": "blue",
     "highlight": "Informações em verificação",
     "verification": "unconfirmed",
@@ -106,5 +106,40 @@
       "width": 18,
       "height": 18
     }
+  },
+  {
+    "id": "flambra",
+    "name": "Flambra",
+    "tagline": "Sua rotina contribui para a inteligência artificial.",
+    "description": "Grave tarefas reais do dia a dia em primeira pessoa e contribua para projetos de inteligência artificial e robótica.",
+    "tasks": ["Vídeo", "Robótica"],
+    "status": "Cadastro disponível",
+    "device": "Celular compatível",
+    "taskDevices": ["Celular"],
+    "access": "Cadastro e painel pelo site; gravação pelo navegador no celular aceito pela plataforma.",
+    "supportedModels": "Somente os modelos listados no guia oficial estão liberados. A lista inclui iPhone 12 e Galaxy S21, com variações específicas. Confira o nome completo do aparelho; modelos Mini, FE, Edge e Google Pixel não estão aceitos na lista consultada.",
+    "equipment": "Suporte de cabeça compatível com o celular para gravar com as mãos livres. O acessório é adquirido pelo participante e não é enviado pela Flambra.",
+    "deviceSources": [
+      {
+        "label": "Flambra · Como funciona e celulares aceitos",
+        "url": "https://app.flambra.com/ganhe/como-funciona"
+      },
+      {
+        "label": "Flambra · Plataforma e perguntas frequentes",
+        "url": "https://app.flambra.com/"
+      }
+    ],
+    "region": "Brasil e América Latina; confirme as condições para sua região.",
+    "payment": "PIX no Brasil; consulte os ciclos e as condições de pagamento para outros países.",
+    "experience": "Não exige experiência com filmagem",
+    "url": "https://app.flambra.com/",
+    "affiliateUrl": "https://app.flambra.com/?ref=DEA2E27ABF",
+    "color": "orange",
+    "highlight": "Pagamento por horas aprovadas",
+    "verification": "confirmed",
+    "reviewedAt": "2026-10-13",
+    "mark": "initials",
+    "initials": "F",
+    "image": null
   }
 ]
