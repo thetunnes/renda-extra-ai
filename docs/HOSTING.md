@@ -2,7 +2,7 @@
 
 ## Publicação
 
-Repositório existente: `thetunnes/renda-extra-ai`. Domínio principal: `https://granaextracomia.com.br`. A migração mantém o código privado e publica apenas a exportação estática. Pages em repositórios privados exige um plano GitHub compatível, como Pro; não altere a visibilidade para contornar esse requisito sem autorização do proprietário.
+Repositório existente: `thetunnes/renda-extra-ai`. Domínio principal: `https://granaextracomia.com.br`. O proprietário tornou o repositório público para habilitar GitHub Pages no plano gratuito. O site publicado contém a exportação estática; o código e o histórico do repositório também são públicos. Se a visibilidade for alterada para privada futuramente, Pages exigirá um plano GitHub compatível, como Pro.
 
 O workflow `.github/workflows/quality.yml` executa `npm ci` e `npm run verify`. Em pushes para `main` ou execução manual nessa branch, envia a pasta `out/` verificada e publica no ambiente `github-pages`. Pull requests não publicam. Se qualquer verificação falhar, não há publicação. Não são necessários tokens pessoais, chaves ou serviços adicionais.
 

@@ -1,6 +1,6 @@
 # granaextracomia
 
-Portal independente para comparar plataformas de contribuição para IA. Next.js, React e exportação estática; publicação preparada para GitHub Pages com o domínio `granaextracomia.com.br`, mantendo o repositório privado.
+Portal independente para comparar plataformas de contribuição para IA. Next.js, React e exportação estática; publicação via GitHub Pages com o domínio `granaextracomia.com.br` e repositório público.
 
 ## Início
 
