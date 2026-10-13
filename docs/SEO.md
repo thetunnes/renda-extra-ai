@@ -21,7 +21,7 @@ O site já apresentava conteúdo no HTML, identidade consistente, fontes oficiai
 2. Ampliar os guias, hoje curtos, com exemplos originais, processo editorial e dúvidas reais. Manter somente requisitos e condições sustentados por fontes. Evitar páginas repetidas apenas para palavras-chave.
 3. Medir PageSpeed Insights e Core Web Vitals em mobile e desktop. Priorizar melhorias com dados; não há medição de desempenho nesta avaliação.
 4. Criar imagem social e validar prévias em redes escolhidas. Metadados não controlam integralmente a apresentação de cada aplicativo.
-5. Considerar domínio próprio para continuidade da marca. Ao migrar, atualizar `site.url` em `lib/site.ts`, redirecionar URLs antigas quando a hospedagem permitir e reenviar sitemap.
+5. Concluir a ativação do domínio próprio `granaextracomia.com.br` seguindo [hospedagem e domínio](HOSTING.md). A origem canônica está em `config/brand.json`; redirecionar URLs antigas quando a hospedagem anterior permitir e reenviar sitemap após a migração.
 
 ## Manutenção e validação
 
