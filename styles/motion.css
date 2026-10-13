@@ -63,6 +63,16 @@
     rotate: 0deg;
   }
 }
+@keyframes hero-sway {
+  0%,
+  100% {
+    transform: translateX(calc(-1 * var(--hero-sway-distance)))
+      rotate(calc(2deg - var(--hero-sway-rotation)));
+  }
+  50% {
+    transform: translateX(var(--hero-sway-distance)) rotate(calc(2deg + var(--hero-sway-rotation)));
+  }
+}
 @keyframes guide-entry {
   from {
     opacity: 0.65;
@@ -77,8 +87,17 @@
   html[data-entrance='true'] .hero-copy > h1 {
     animation: content-rise calc(var(--motion-duration) * 2.4) ease-out;
   }
+  .hero-directory {
+    animation: hero-sway var(--hero-sway-duration) ease-in-out infinite;
+  }
   html[data-entrance='true'] .hero-directory {
-    animation: sheet-entry calc(var(--motion-duration) * 3) ease-out;
+    animation:
+      sheet-entry calc(var(--motion-duration) * 3) ease-out,
+      hero-sway var(--hero-sway-duration) ease-in-out infinite;
+  }
+  html .hero-directory:hover,
+  html .hero-directory:focus-within {
+    animation-play-state: paused;
   }
   .is-entering {
     animation: content-rise calc(var(--motion-duration) * 2.4) ease-out both;

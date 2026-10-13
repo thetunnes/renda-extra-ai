@@ -33,7 +33,7 @@ Coloque o arquivo em `public/`. As dimensões devem refletir o arquivo real. Her
 
 ## Animações e organização
 
-Em `config/experience.json`, `motion.enabled=false` desliga movimentos. `durationMs` controla transições e entrada; `hoverLiftPx` e `cardLiftPx` controlam deslocamentos. `entrance=true` ativa uma entrada discreta do hero. A preferência `prefers-reduced-motion` prevalece sempre. Não há animações contínuas.
+Em `config/experience.json`, `motion.enabled=false` desliga movimentos. `durationMs` controla transições e entrada; `hoverLiftPx` e `cardLiftPx` controlam deslocamentos. `entrance=true` ativa uma entrada discreta do hero. A preferência `prefers-reduced-motion` prevalece sempre. `heroSway.durationMs`, `heroSway.distancePx` e `heroSway.rotationDeg` controlam o balanço contínuo e suave do card do hero. O balanço pausa com hover ou foco dentro do card e respeita a preferência de movimento reduzido e o botão de pausa.
 
 `sections` permite reordenar as dez seções existentes, mantendo hero primeiro. Todas são obrigatórias para preservar links, avisos e conteúdo; esconder ou adicionar seções exige alterar explicitamente o registro em `components/Home.tsx` e o validador. `navigation` controla rótulos e âncoras existentes.
 

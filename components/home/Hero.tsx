@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import PlatformLink from '@/components/ui/PlatformLink';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 import { site, platforms } from '@/lib/site';
 import Media from '@/components/ui/Media';
@@ -42,14 +42,14 @@ export default function Hero() {
             </h2>
             <div className="directory-list">
               {platforms.map((p) => (
-                <Link className="directory-row" key={p.id} href={`/plataformas/${p.id}/`}>
+                <PlatformLink className="directory-row" key={p.id} platform={p}>
                   <Mark p={p} />
                   <span>
                     <strong>{p.name}</strong>
                     <small>{p.tasks.join(' · ') || copy.catalog.unknownTask}</small>
                   </span>
                   <ArrowUpRight size={20} aria-hidden="true" />
-                </Link>
+                </PlatformLink>
               ))}
             </div>
             <p className="directory-note">{copy.hero.artFooter}</p>

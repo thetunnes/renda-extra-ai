@@ -4,7 +4,12 @@
     "durationMs": 260,
     "hoverLiftPx": 1,
     "cardLiftPx": 3,
-    "entrance": true
+    "entrance": true,
+    "heroSway": {
+      "durationMs": 6000,
+      "distancePx": 5,
+      "rotationDeg": 1
+    }
   },
   "features": {
     "assistantTools": true

@@ -152,6 +152,15 @@ export function validateContent(
     motion.hoverLiftPx <= 12 &&
     motion.cardLiftPx >= 0 &&
     motion.cardLiftPx <= 12, 'Motion: valores fora dos limites');
+  require(Number.isFinite(motion.heroSway.durationMs) &&
+    motion.heroSway.durationMs >= 3000 &&
+    motion.heroSway.durationMs <= 20000 &&
+    Number.isFinite(motion.heroSway.distancePx) &&
+    motion.heroSway.distancePx >= 0 &&
+    motion.heroSway.distancePx <= 12 &&
+    Number.isFinite(motion.heroSway.rotationDeg) &&
+    motion.heroSway.rotationDeg >= 0 &&
+    motion.heroSway.rotationDeg <= 3, 'Motion: balanço do hero fora dos limites');
   require(typeof experience.features.assistantTools ===
     'boolean', 'assistantTools deve ser booleano');
   media(experience.images.hero, 'hero');

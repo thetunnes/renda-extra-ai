@@ -118,6 +118,9 @@
   --font-body: 'DM Sans', Arial, Helvetica, sans-serif;
   --font-heading: Georgia, Times New Roman, serif;
   --motion-duration: 260ms;
+  --hero-sway-duration: 6000ms;
+  --hero-sway-distance: 5px;
+  --hero-sway-rotation: 1deg;
   --hover-lift: -1px;
   --card-lift: -3px;
   --card-radius: 20px;

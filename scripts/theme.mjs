@@ -15,6 +15,9 @@ for (const [name, value] of Object.entries(theme.typography)) {
 }
 for (const [name, value, unit] of [
   ['motion-duration', motion.durationMs, 'ms'],
+  ['hero-sway-duration', motion.heroSway.durationMs, 'ms'],
+  ['hero-sway-distance', motion.heroSway.distancePx, 'px'],
+  ['hero-sway-rotation', motion.heroSway.rotationDeg, 'deg'],
   ['hover-lift', -motion.hoverLiftPx, 'px'],
   ['card-lift', -motion.cardLiftPx, 'px'],
   ['card-radius', theme.shape.cardRadiusPx, 'px'],
