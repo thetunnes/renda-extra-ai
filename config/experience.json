@@ -1,13 +1,17 @@
 {
   "motion": {
     "enabled": true,
-    "durationMs": 200,
-    "hoverLiftPx": 2,
-    "cardLiftPx": 4,
-    "entrance": false
+    "durationMs": 260,
+    "hoverLiftPx": 1,
+    "cardLiftPx": 3,
+    "entrance": true
   },
-  "features": { "assistantTools": true },
-  "images": { "hero": null },
+  "features": {
+    "assistantTools": true
+  },
+  "images": {
+    "hero": null
+  },
   "navigation": [
     ["Plataformas", "plataformas"],
     ["Comparar", "comparar"],

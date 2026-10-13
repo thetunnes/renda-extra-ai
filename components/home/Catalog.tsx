@@ -40,10 +40,10 @@ export default function Catalog() {
             <p>{copy.catalog.description}</p>
           </div>
           <span className="count">
-            {String(platforms.length).padStart(2, '0')} {copy.catalog.countSuffix}
+            {platforms.length} {copy.catalog.countSuffix}
           </span>
         </div>
-        <div className="filters" aria-label="Filtrar por tipo de tarefa">
+        <div className="filters" role="group" aria-label="Filtrar por tipo de tarefa">
           {taskFilters.map((f) => {
             const Icon = taskIcons[f];
             return (
@@ -58,6 +58,10 @@ export default function Catalog() {
             );
           })}
         </div>
+        <p className="filter-summary" role="status" aria-live="polite">
+          {filtered.length}{' '}
+          {filtered.length === 1 ? copy.catalog.filteredCountSingular : copy.catalog.filteredCount}
+        </p>
         <div className="platform-grid">
           {filtered.map((p) => (
             <article className="platform-card" key={p.id}>
@@ -103,14 +107,27 @@ export default function Catalog() {
                   {copy.catalog.details}
                   <ArrowRight size={15} />
                 </Link>
-                <PlatformLink platform={p} aria-label={`Acessar ${p.name}`}>
+                <PlatformLink
+                  platform={p}
+                  aria-label={`Acessar ${p.name}`}
+                  title={copy.catalog.accessNote}
+                >
+                  {copy.catalog.access}
                   <ArrowUpRight size={19} />
                 </PlatformLink>
               </div>
             </article>
           ))}
         </div>
-        {!filtered.length && <p role="status">{copy.catalog.empty}</p>}
+        {!filtered.length && (
+          <div className="catalog-empty">
+            <p>{copy.catalog.empty}</p>
+            <button className="text-link" onClick={() => setFilter('Todas')}>
+              {copy.catalog.emptyAction}
+              <ArrowRight size={16} />
+            </button>
+          </div>
+        )}
         <p className="footnote">
           <Clock3 size={13} />
           {copy.catalog.reviewNote}

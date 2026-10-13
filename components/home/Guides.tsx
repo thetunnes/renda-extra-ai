@@ -26,7 +26,6 @@ export default function Guides() {
             <Link className="guide-card" href={`/guias/${g.slug}/`} key={g.title}>
               <div className={`guide-art guide-${i}`}>
                 {g.image ? <Media asset={g.image} /> : <GuideIcon name={g.icon} />}
-                <span>0{i + 1}</span>
               </div>
               <div className="guide-content">
                 <small>{g.type}</small>

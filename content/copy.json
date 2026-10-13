@@ -1,28 +1,32 @@
 {
   "header": {
     "skip": "Pular para plataformas",
-    "explore": "Explorar plataformas"
+    "explore": "Ver plataformas",
+    "pauseMotion": "Pausar animações",
+    "resumeMotion": "Ativar animações",
+    "menuOpen": "Abrir menu",
+    "menuClose": "Fechar menu"
   },
   "hero": {
-    "eyebrow": "PESSOAS REAIS. INTELIGÊNCIA ARTIFICIAL.",
-    "title": "O futuro da IA",
-    "titleLine2": "também precisa",
-    "titleEmphasis": "de você.",
-    "description": "Descubra plataformas que pagam pela sua contribuição.",
-    "descriptionLine2": "Vídeos, voz, fotos e pequenas tarefas que ajudam",
-    "descriptionLine3": "a treinar a próxima geração de IA.",
-    "primaryAction": "Encontrar plataformas",
-    "secondaryAction": "Como funciona",
+    "eyebrow": "Uma contribuição sua. Um novo aprendizado para a IA.",
+    "title": "Renda extra",
+    "titleLine2": "com IA.",
+    "titleEmphasis": "Compare antes de começar.",
+    "description": "Encontre plataformas que remuneram vídeos, voz e fotos para treinar inteligência artificial.",
+    "descriptionLine2": "Compare tarefas, aparelhos e requisitos.",
+    "descriptionLine3": "Ganhos dependem da disponibilidade e da aprovação do trabalho.",
+    "primaryAction": "Ver plataformas",
+    "secondaryAction": "Encontrar meu perfil",
     "decoration": "+",
-    "artLabel": "CONEXÕES QUE CONSTROEM O FUTURO",
-    "artCaption": "o seu lado humano.",
-    "artCaptionEmphasis": "a próxima inteligência.",
+    "artLabel": "Sua próxima possibilidade",
+    "artCaption": "O que combina",
+    "artCaptionEmphasis": "com a sua rotina?",
     "voiceTitle": "Sua voz, novos aprendizados",
     "videoTitle": "O cotidiano ensina",
     "videoSubtitle": "Vídeos para treinar IA",
     "photoTitle": "Um novo ponto de vista",
     "photoSubtitle": "Fotos do mundo real",
-    "artFooter": "Sua contribuição faz parte."
+    "artFooter": "Consulte os requisitos antes de se cadastrar."
   },
   "trust": {
     "Curadoria_independente": "Curadoria independente",
@@ -31,52 +35,59 @@
     "Pensado_para_o_Brasil": "Pensado para o Brasil"
   },
   "catalog": {
-    "eyebrow": "EXPLORE AS POSSIBILIDADES",
-    "title": "Encontre seu ponto de partida.",
-    "description": "Conheça as plataformas. Entenda as tarefas. Escolha o que faz sentido para você.",
-    "countSuffix": "plataformas na curadoria",
-    "unknownTask": "Treinamento de IA",
-    "details": "Ver detalhes",
+    "eyebrow": "Escolha com informação",
+    "title": "Compare as plataformas",
+    "description": "Veja o que cada uma oferece e confira os requisitos antes de se cadastrar.",
+    "countSuffix": "plataformas para explorar",
+    "unknownTask": "Tarefas a confirmar",
+    "details": "Ver requisitos",
     "reviewNote": "A disponibilidade de tarefas pode mudar. Consulte a data de revisão e as fontes nos detalhes.",
-    "empty": "Nenhuma plataforma com esse tipo de tarefa confirmado."
+    "empty": "Nenhuma plataforma com esse tipo de tarefa confirmado.",
+    "access": "Acessar site",
+    "accessNote": "Abre em uma nova aba",
+    "filterLabel": "Tipo de tarefa",
+    "filteredCount": "plataformas neste filtro",
+    "emptyAction": "Mostrar todas",
+    "filteredCountSingular": "plataforma neste filtro"
   },
   "quiz": {
-    "eyebrow": "UM CAMINHO COM A SUA CARA",
-    "title": "Por onde",
-    "titleLine2": "você quer começar?",
-    "description": "Conte o que prefere fazer e encontre plataformas que combinam com você.",
-    "privacyNote": "Sem cadastro. Sem complicação.",
+    "eyebrow": "Seu perfil, seu ponto de partida",
+    "title": "Encontre o seu",
+    "titleLine2": "ponto de partida",
+    "description": "Escolha uma tarefa e o aparelho que você tem. Veja opções com esses requisitos confirmados.",
+    "privacyNote": "Suas escolhas ficam apenas nesta página.",
     "step1": "01",
     "taskQuestion": "Que tipo de tarefa você prefere?",
     "step2": "02",
-    "deviceQuestion": "Qual dispositivo você tem para as tarefas?",
-    "action": "Encontrar meu caminho",
-    "resultsTitle": "Plataformas que combinam com suas preferências",
+    "deviceQuestion": "Qual aparelho você usará nas tarefas?",
+    "action": "Ver opções para mim",
+    "resultsTitle": "Estas opções combinam com suas escolhas",
     "empty": "Nenhuma plataforma com essas características confirmadas. Experimente outro tipo de tarefa ou dispositivo.",
     "requirementsNote": "Filtramos apenas dispositivos confirmados para tarefas. Confira o modelo exigido nos detalhes; acesso pelo navegador não garante compatibilidade para gravar."
   },
   "comparison": {
-    "eyebrow": "A ESCOLHA É SUA",
-    "title": "Menos abas abertas. Mais clareza.",
-    "description": "As informações essenciais, lado a lado.",
+    "eyebrow": "Decida com mais clareza",
+    "title": "Tudo lado a lado",
+    "description": "Compare dispositivos, formas de pagamento e condições.",
     "caption": "Comparação das plataformas",
     "columnTitle": "O que você precisa saber",
-    "disclaimer": "Ganhos variam conforme o projeto e a aprovação das tarefas. Consulte os requisitos no site de cada plataforma."
+    "disclaimer": "Ganhos variam conforme o projeto e a aprovação das tarefas. Consulte os requisitos no site de cada plataforma.",
+    "modelsAction": "Ver modelos e condições"
   },
   "how": {
-    "eyebrow": "DO PRIMEIRO CLIQUE À CONTRIBUIÇÃO",
-    "title": "Você não precisa entender de IA.",
-    "titleLine2": "Só precisa começar pelo básico.",
+    "eyebrow": "Do cadastro à contribuição",
+    "title": "Comece com",
+    "titleLine2": "o que você sabe",
     "steps": [
       {
         "icon": "MousePointer2",
         "title": "Escolha uma plataforma",
-        "text": "Compare as opções e encontre tarefas que façam sentido para sua rotina."
+        "text": "Escolha pelas tarefas e pelos requisitos. Confira se seu aparelho é aceito."
       },
       {
         "icon": "Link2",
         "title": "Faça seu cadastro",
-        "text": "Acesse o site oficial e confira os requisitos para participar."
+        "text": "Leia os termos no site da plataforma e confirme as condições para sua região."
       },
       {
         "icon": "Video",
@@ -91,23 +102,23 @@
     ]
   },
   "about": {
-    "eyebrow": "TECNOLOGIA COM UM LADO HUMANO",
-    "title": "Para aprender sobre o mundo,",
-    "titleLine2": "a IA precisa de quem vive nele.",
-    "intro": "Um sotaque. Um objeto. O jeito de preparar um café. Sistemas de inteligência artificial aprendem com exemplos do mundo real — e é aí que as pessoas entram.",
+    "eyebrow": "Por trás de cada dado, uma pessoa",
+    "title": "A IA aprende",
+    "titleLine2": "com a vida real",
+    "intro": "Um sotaque, uma imagem, o jeito de preparar um café. Exemplos do cotidiano ajudam sistemas de inteligência artificial a aprender.",
     "bodyBeforeBrand": "Dependendo do projeto, empresas buscam vozes, imagens, movimentos e atividades humanas para treinar e avaliar seus modelos. A",
     "bodyAfterBrand": "conecta você a essas possibilidades, com informação clara para decidir.",
     "note": "Pessoas diferentes. Perspectivas que importam."
   },
   "guides": {
-    "eyebrow": "INFORMAÇÃO PARA DAR O PRÓXIMO PASSO",
-    "title": "Comece com mais confiança.",
-    "description": "Leituras rápidas, decisões melhores.",
+    "eyebrow": "Antes da primeira tarefa",
+    "title": "Prepare o próximo passo",
+    "description": "Guias práticos para começar com mais informação.",
     "action": "Ler guia"
   },
   "transparency": {
-    "title": "Antes de começar,",
-    "titleLine2": "vamos ser transparentes.",
+    "title": "Expectativas claras.",
+    "titleLine2": "Escolhas melhores.",
     "items": [
       [
         "Ganhos não são garantidos",
@@ -125,9 +136,9 @@
     ]
   },
   "faq": {
-    "eyebrow": "SEM DÚVIDAS NO CAMINHO",
-    "title": "Bom saber",
-    "titleLine2": "antes de começar.",
+    "eyebrow": "Dúvidas frequentes",
+    "title": "Vale saber",
+    "titleLine2": "antes de começar",
     "items": [
       [
         "Preciso ter experiência com inteligência artificial?",
@@ -148,9 +159,20 @@
     ]
   },
   "footer": {
-    "explore": "Explore as possibilidades",
+    "explore": "Ver plataformas",
     "rss": "Feed RSS",
     "json": "Feed JSON",
     "ai": "Índice para IA"
+  },
+  "notFound": {
+    "title": "Essa página não existe",
+    "description": "O endereço pode ter mudado. Explore as plataformas ou volte ao início para continuar.",
+    "action": "Ver plataformas"
+  },
+  "article": {
+    "skip": "Pular para o conteúdo",
+    "back": "← Plataformas",
+    "platformLabel": "Guia da plataforma",
+    "modalLabel": "Conheça a plataforma"
   }
 }

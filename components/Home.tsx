@@ -12,6 +12,7 @@ import Guides from './home/Guides';
 import Transparency from './home/Transparency';
 import Faq from './home/Faq';
 import Footer from './home/Footer';
+import SectionMotion from './ui/SectionMotion';
 const sections: Record<string, ComponentType> = {
   hero: Hero,
   trust: Trust,
@@ -35,6 +36,7 @@ export default function Home() {
         })}
       </main>
       <Footer />
+      <SectionMotion />
     </>
   );
 }

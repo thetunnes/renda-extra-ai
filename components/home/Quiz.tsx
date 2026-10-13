@@ -19,7 +19,7 @@ export default function Quiz() {
   const matches = recommendPlatforms(platforms, preference, device);
   return (
     <>
-      <section className="quiz-section wrap">
+      <section id="encontrar" className="quiz-section wrap">
         <div className="quiz-intro">
           <span className="eyebrow">
             <Sparkles size={14} />

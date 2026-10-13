@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/dm-sans-400.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/dm-sans-500.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/dm-sans-600.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/dm-sans-700.ttf') format('truetype');
+}
 :root {
   --cream: var(--color-background);
   --ink: var(--color-text);
@@ -13,17 +41,17 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 104px;
+  scroll-padding-top: 112px;
 }
 body {
   margin: 0;
   background: var(--cream);
   color: var(--ink);
-  font: 14px/1.6 var(--font-body);
+  font: 16px/1.65 var(--font-body);
 }
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
+::selection {
+  background: var(--lime);
+  color: var(--ink);
 }
 a {
   color: inherit;
@@ -33,16 +61,15 @@ button {
   font: inherit;
   color: inherit;
   cursor: pointer;
+  border: 0;
 }
 button,
 a {
+  -webkit-tap-highlight-color: transparent;
   transition:
     background var(--motion-duration),
     transform var(--motion-duration),
     color var(--motion-duration);
-}
-button {
-  border: 0;
 }
 button:focus-visible,
 a:focus-visible,
@@ -50,15 +77,32 @@ summary:focus-visible {
   outline: 3px solid var(--color-focus);
   outline-offset: 5px;
 }
-button:hover,
-a.button:hover {
-  transform: translateY(var(--hover-lift));
+button:active,
+a.button:active {
+  transform: translateY(1px);
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.6;
 }
 .wrap {
-  max-width: 1192px;
-  padding-left: 28px;
-  padding-right: 28px;
-  margin: auto;
+  max-width: var(--layout-width);
+  padding-inline: 32px;
+  margin-inline: auto;
+}
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+h2 {
+  font: 400 clamp(32px, 3.4vw, 46px) / 1.12 var(--font-heading);
+  letter-spacing: -0.035em;
+  margin: 12px 0 18px;
 }
 .sr-only {
   position: absolute;
@@ -70,10 +114,11 @@ a.button:hover {
 .skip {
   position: fixed;
   top: -100px;
+  left: 16px;
   z-index: 100;
-  background: var(--color-surface);
-  padding: 10px;
+  background: var(--white);
+  padding: 12px 18px;
 }
 .skip:focus {
-  top: 10px;
+  top: 12px;
 }

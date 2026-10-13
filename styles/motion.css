@@ -1,50 +1,133 @@
-/* Motion is configurable and always subordinate to the OS preference. */
-.platform-dialog::backdrop {
-  background: rgb(22 46 36 / 40%);
-  backdrop-filter: blur(5px);
+/* The requested border effect is restricted to interaction and the initial sheet entrance. */
+@property --frame-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
 }
-.platform-dialog:open {
-  display: block;
-}
-.platform-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.hero-image {
-  width: 100%;
-  height: auto;
-  max-height: 440px;
-  object-fit: contain;
-}
-.guide-art img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-  z-index: 1;
-}
-.button {
-  border-radius: var(--button-radius);
-}
-.platform-card {
-  border-radius: var(--card-radius);
-}
-.wrap {
-  max-width: var(--layout-width);
-}
-@keyframes gentle-entry {
+@keyframes frame-turn {
   from {
-    opacity: 0;
-    translate: 0 8px;
+    --frame-angle: 0deg;
+  }
+  to {
+    --frame-angle: 360deg;
+  }
+}
+.hero-directory::after,
+.platform-card::after,
+.quiz-section::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  padding: 2px;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: conic-gradient(
+    from var(--frame-angle),
+    transparent 65%,
+    var(--color-focus) 82%,
+    var(--lime) 92%,
+    transparent
+  );
+  mask:
+    linear-gradient(var(--white) 0 0) content-box,
+    linear-gradient(var(--white) 0 0);
+  mask-composite: exclude;
+}
+.quiz-section {
+  position: relative;
+}
+.hero-directory::after {
+  opacity: 0.8;
+  animation: frame-turn 4s linear 1;
+}
+.platform-card:hover::after,
+.platform-card:focus-within::after,
+.quiz-section:focus-within::after {
+  opacity: 1;
+  animation: frame-turn 3s linear 1;
+}
+@keyframes content-rise {
+  from {
+    opacity: 0.55;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes sheet-entry {
+  from {
+    opacity: 0.6;
+    translate: 0 20px;
+    rotate: -3deg;
   }
   to {
     opacity: 1;
     translate: 0 0;
+    rotate: 0deg;
   }
 }
-html[data-entrance='true'] .hero-copy {
-  animation: gentle-entry var(--motion-duration) ease-out;
+@keyframes guide-entry {
+  from {
+    opacity: 0.65;
+    clip-path: inset(0 0 10% 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html[data-entrance='true'] .hero-copy > h1 {
+    animation: content-rise calc(var(--motion-duration) * 2.4) ease-out;
+  }
+  html[data-entrance='true'] .hero-directory {
+    animation: sheet-entry calc(var(--motion-duration) * 3) ease-out;
+  }
+  .is-entering {
+    animation: content-rise calc(var(--motion-duration) * 2.4) ease-out both;
+  }
+  .guide-card.is-entering {
+    animation-name: guide-entry;
+  }
+  .platform-card:nth-child(even).is-entering,
+  .steps > li:nth-child(even).is-entering {
+    animation-delay: 80ms;
+  }
+  .quiz-form.is-entering {
+    animation-delay: 100ms;
+  }
+  .button:hover svg,
+  .directory-row:hover > svg,
+  .guide-card:hover .guide-content svg {
+    transform: translate(2px, -2px);
+  }
+  .button svg,
+  .directory-row > svg,
+  .guide-content svg {
+    transition: transform var(--motion-duration);
+  }
+  .guide-card:hover .guide-art svg {
+    transform: rotate(-6deg);
+  }
+  .guide-art svg {
+    transition: transform var(--motion-duration);
+  }
+  .platform-dialog:open {
+    animation: content-rise var(--motion-duration) ease-out;
+  }
+  .nav nav.is-open {
+    animation: content-rise var(--motion-duration) ease-out;
+  }
+}
+.platform-dialog::backdrop {
+  background: var(--color-tone-162e2466);
+  backdrop-filter: blur(4px);
+}
+.platform-dialog:open {
+  display: block;
 }
 html[data-motion='off'] *,
 html[data-motion='off'] *::before,
@@ -54,11 +137,6 @@ html[data-motion='off'] *::after {
 }
 html[data-motion='off'] {
   scroll-behavior: auto;
-}
-html[data-motion='off'] button:hover,
-html[data-motion='off'] a.button:hover,
-html[data-motion='off'] .platform-card:hover {
-  transform: none;
 }
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -70,9 +148,7 @@ html[data-motion='off'] .platform-card:hover {
     animation: none !important;
     transition: none !important;
   }
-  button:hover,
-  a.button:hover,
-  .platform-card:hover {
+  .hero-directory {
     transform: none;
   }
 }

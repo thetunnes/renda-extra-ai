@@ -6,6 +6,7 @@ import { platforms, site } from '@/lib/site';
 import { absoluteUrl, breadcrumbs, jsonLd, pageMetadata } from '@/lib/seo';
 import ArticleShell from '@/components/ArticleShell';
 import Share from '@/components/Share';
+import copy from '@/content/copy.json';
 export const dynamicParams = false;
 export function generateStaticParams() {
   return platforms.map((p) => ({ slug: p.id }));
@@ -35,13 +36,21 @@ export default async function PlatformPage({ params }: Props) {
       <nav aria-label="Caminho da página">
         <Link href="/">Início</Link> / {p.name}
       </nav>
-      <span className="eyebrow">GUIA DA PLATAFORMA</span>
-      <h1>{p.name}: como funciona e o que você precisa</h1>
+      <span className="eyebrow">{copy.article.platformLabel}</span>
+      <h1>{p.name}</h1>
       <p className="article-lead">{p.description}</p>
       <p className="article-date">
         Informações consultadas em <time dateTime={p.reviewedAt}>{formatDate(p.reviewedAt)}</time> ·
         Curadoria {site.name}
       </p>
+      <div className="article-actions">
+        <PlatformLink className="button" platform={p}>
+          Acessar {p.name} ↗
+        </PlatformLink>
+        <a className="text-link" href="#requisitos">
+          {copy.catalog.details} ↓
+        </a>
+      </div>
       <Share title={`${p.name} — ${site.name}`} url={absoluteUrl(path)} />
       <section>
         <h2>Tarefas e condições</h2>
@@ -60,7 +69,7 @@ export default async function PlatformPage({ params }: Props) {
           ))}
         </dl>
       </section>
-      <section>
+      <section id="requisitos">
         <h2>Dispositivos e equipamentos</h2>
         <h3>Acesso à conta</h3>
         <p>{p.access}</p>

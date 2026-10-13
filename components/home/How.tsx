@@ -12,22 +12,21 @@ export default function How() {
             <br />
             {copy.how.titleLine2}
           </h2>
-          <div className="steps">
+          <ol className="steps" role="list">
             {copy.how.steps
               .map((s) => ({ ...s, icon: stepIcons[s.icon as keyof typeof stepIcons] }))
-              .map((s, i) => (
-                <div key={s.title}>
+              .map((s) => (
+                <li key={s.title}>
                   <div className="step-top">
                     <span>
                       <s.icon size={22} />
                     </span>
-                    <small>0{i + 1}</small>
                   </div>
                   <h3>{s.title}</h3>
                   <p>{s.text}</p>
-                </div>
+                </li>
               ))}
-          </div>
+          </ol>
         </div>
       </section>
     </>

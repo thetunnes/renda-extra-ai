@@ -1,16 +1,16 @@
 {
   "colors": {
-    "background": "#fafaf6",
-    "text": "#243b33",
-    "primary": "#214f3e",
-    "muted": "#777e75",
-    "border": "#e4e6dc",
-    "accent": "#e3efbf",
+    "background": "#f5f6f0",
+    "text": "#183c30",
+    "primary": "#234e3c",
+    "muted": "#526258",
+    "border": "#d7dfd0",
+    "accent": "#d6ef91",
     "surface": "#fff",
-    "focus": "#8fba64",
-    "emphasis": "#6b8557",
-    "panel": "#edf1e4",
-    "inverse": "#234b3c",
+    "focus": "#416729",
+    "emphasis": "#436344",
+    "panel": "#e8eddf",
+    "inverse": "#153c2c",
     "tone-fafaf6ef": "#fafaf6ef",
     "tone-7b8875": "#7b8875",
     "tone-759448": "#759448",
@@ -110,17 +110,21 @@
     "tone-68775e": "#68775e",
     "tone-606e59": "#606e59",
     "tone-737f6a": "#737f6a",
-    "tone-365c3c": "#365c3c"
+    "tone-365c3c": "#365c3c",
+    "hero-ink": "#f7faef",
+    "hero-muted": "#c3d2bc",
+    "shadow": "#163b2414",
+    "texture": "#2848310b"
   },
   "typography": {
-    "body": "Arial, Helvetica, sans-serif",
+    "body": "'DM Sans', Arial, Helvetica, sans-serif",
     "heading": "Georgia, Times New Roman, serif"
   },
   "shape": {
-    "cardRadiusPx": 12,
-    "buttonRadiusPx": 7
+    "cardRadiusPx": 20,
+    "buttonRadiusPx": 10
   },
   "layout": {
-    "maxWidthPx": 1192
+    "maxWidthPx": 1240
   }
 }

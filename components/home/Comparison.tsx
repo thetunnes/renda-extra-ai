@@ -2,6 +2,7 @@ import { platforms } from '@/lib/site';
 import Mark from '@/components/ui/PlatformMark';
 import { comparisonFacts } from '@/domain/platforms';
 import copy from '@/content/copy.json';
+import Link from 'next/link';
 export default function Comparison() {
   return (
     <>
@@ -20,10 +21,10 @@ export default function Comparison() {
               <tr>
                 <th>{copy.comparison.columnTitle}</th>
                 {platforms.map((p) => (
-                  <th key={p.id}>
+                  <th key={p.id} scope="col">
                     <span>
                       <Mark p={p} />
-                      {p.name}
+                      <Link href={`/plataformas/${p.id}/`}>{p.name}</Link>
                     </span>
                   </th>
                 ))}
@@ -40,7 +41,16 @@ export default function Comparison() {
                           {v}
                         </th>
                       ) : (
-                        <td key={i}>{v}</td>
+                        <td key={i}>
+                          {row[0] === 'Modelos compatíveis' ? (
+                            <details className="models-disclosure">
+                              <summary>{copy.comparison.modelsAction}</summary>
+                              <p>{v}</p>
+                            </details>
+                          ) : (
+                            v
+                          )}
+                        </td>
                       ),
                     )}
                   </tr>
@@ -59,10 +69,22 @@ export default function Comparison() {
                 {comparisonFacts(p).map(([a, b]) => (
                   <div key={a}>
                     <dt>{a}</dt>
-                    <dd>{b}</dd>
+                    <dd>
+                      {a === 'Modelos compatíveis' ? (
+                        <details className="models-disclosure">
+                          <summary>{copy.comparison.modelsAction}</summary>
+                          <p>{b}</p>
+                        </details>
+                      ) : (
+                        b
+                      )}
+                    </dd>
                   </div>
                 ))}
               </dl>
+              <Link className="text-link" href={`/plataformas/${p.id}/`}>
+                {copy.catalog.details} →
+              </Link>
             </article>
           ))}
         </div>

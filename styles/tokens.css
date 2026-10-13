@@ -1,16 +1,16 @@
 /* Generated from config/theme.json and config/experience.json. Run npm run theme. */
 :root {
-  --color-background: #fafaf6;
-  --color-text: #243b33;
-  --color-primary: #214f3e;
-  --color-muted: #777e75;
-  --color-border: #e4e6dc;
-  --color-accent: #e3efbf;
+  --color-background: #f5f6f0;
+  --color-text: #183c30;
+  --color-primary: #234e3c;
+  --color-muted: #526258;
+  --color-border: #d7dfd0;
+  --color-accent: #d6ef91;
   --color-surface: #fff;
-  --color-focus: #8fba64;
-  --color-emphasis: #6b8557;
-  --color-panel: #edf1e4;
-  --color-inverse: #234b3c;
+  --color-focus: #416729;
+  --color-emphasis: #436344;
+  --color-panel: #e8eddf;
+  --color-inverse: #153c2c;
   --color-tone-fafaf6ef: #fafaf6ef;
   --color-tone-7b8875: #7b8875;
   --color-tone-759448: #759448;
@@ -111,12 +111,16 @@
   --color-tone-606e59: #606e59;
   --color-tone-737f6a: #737f6a;
   --color-tone-365c3c: #365c3c;
-  --font-body: Arial, Helvetica, sans-serif;
+  --color-hero-ink: #f7faef;
+  --color-hero-muted: #c3d2bc;
+  --color-shadow: #163b2414;
+  --color-texture: #2848310b;
+  --font-body: 'DM Sans', Arial, Helvetica, sans-serif;
   --font-heading: Georgia, Times New Roman, serif;
-  --motion-duration: 200ms;
-  --hover-lift: -2px;
-  --card-lift: -4px;
-  --card-radius: 12px;
-  --button-radius: 7px;
-  --layout-width: 1192px;
+  --motion-duration: 260ms;
+  --hover-lift: -1px;
+  --card-lift: -3px;
+  --card-radius: 20px;
+  --button-radius: 10px;
+  --layout-width: 1240px;
 }
