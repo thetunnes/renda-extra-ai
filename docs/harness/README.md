@@ -25,7 +25,7 @@ Este harness é a estrutura de trabalho do portal granaextracomia: contexto para
 6. Para alterações visuais, conferir 390px e desktop, navegação por teclado, contraste e movimento reduzido. Os testes automáticos não medem contraste nem aparência.
 7. Revisar o diff, registrar commit e publicar pelo fluxo da hospedagem existente quando a tarefa incluir a aplicação. Registrar o resultado e qualquer limitação real.
 
-O workflow `.github/workflows/quality.yml` repete a verificação em pull requests e pushes para main. Não publica nem recebe credenciais de hospedagem. A execução remota depende do GitHub Actions estar habilitado; o resultado local não prova execução remota.
+O workflow `.github/workflows/quality.yml` repete a verificação em pull requests e pushes para main. Após a verificação em main, envia `out/` como artefato e publica no GitHub Pages com as permissões temporárias do GitHub Actions, sem credenciais de hospedagem. Pull requests somente verificam. A execução remota depende do GitHub Actions e Pages estarem habilitados; o resultado local não prova execução remota. Veja [hospedagem e domínio](../HOSTING.md).
 
 ## Arquitetura
 

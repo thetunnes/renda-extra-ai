@@ -1,6 +1,6 @@
 # granaextracomia
 
-Portal independente para comparar plataformas de contribuição para IA. Next.js, React e exportação estática; GitHub privado e hospedagem pública mantidos separadamente.
+Portal independente para comparar plataformas de contribuição para IA. Next.js, React e exportação estática; publicação via GitHub Pages com o domínio `granaextracomia.com.br` e repositório público.
 
 ## Início
 
@@ -31,4 +31,4 @@ npm run check     # Validação + tema + formatação + tipos + testes
 npm run verify    # Check + exportação + contrato SEO do HTML
 ```
 
-O build valida os registros e gera o tema automaticamente. O workflow do GitHub executa `verify`. Leia `AGENTS.md` antes de alterações assistidas por IA. O harness não exige API de modelos ou segredos.
+O build valida os registros e gera o tema automaticamente. O workflow do GitHub executa `verify` e, em `main`, publica o resultado no GitHub Pages após todas as verificações passarem. A publicação exige habilitar Pages com a origem GitHub Actions nas configurações do repositório. Veja [hospedagem e domínio](docs/HOSTING.md) para ativação, DNS no Registro.br e HTTPS. Leia `AGENTS.md` antes de alterações assistidas por IA. O harness não exige API de modelos ou segredos.
